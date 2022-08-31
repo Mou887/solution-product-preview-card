@@ -1,0 +1,118 @@
+body{
+    font-size: 14px;
+}
+
+.maindiv{
+     background-color:hsl(30, 38%, 92%);
+     width: 100vw;
+     height: 100vh;
+     position: relative;
+}
+.insidediv{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-radius: 2%;
+}
+.section1{
+    width: 50%;
+     border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+.section2{
+    width: 50%;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    background-color: hsl(0, 0%, 100%);
+}
+.product-image{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+p{
+    padding-top: 5%;
+    padding-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    padding-left: 10%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+.description{
+    padding-right: 2%;
+    padding-left: 10%;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    margin: 5%;
+    color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    border: none;
+    width: 80%;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.button{
+    display: inline-block;
+    color: hsl(158, 36%, 37%);
+    margin: 5%;
+}
+span{
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    margin:5%;
+}
+
+
+@media  (max-width: 1022px) { 
+    .insidediv{
+        flex-direction: column;
+        width:90%;
+        height: 80%;
+
+    }
+    .section1{
+        height: 50%;
+        width: 90%;
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+    }
+    .section2{
+        width: 90%;
+        border-bottom-left-radius: 4%;
+        border-bottom-right-radius: 4%;
+        
+    }
+    .section1 img {
+        object-fit: cover;
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+    }
+ }
+ 
+ 
